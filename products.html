@@ -1,0 +1,737 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" rel="stylesheet">
+
+    <style>
+        .card-body {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+        }
+
+        .card-img-top {
+          width: 100%;
+          height: 400px;
+          object-fit: cover;
+        }
+    </style>
+
+    <title>DBATU | Ecommerce Website</title>
+</head>
+
+<body>
+    <header class="bg-light">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg navbar-light">
+                <a class="navbar-brand" href="/">
+                    <img src="product img/Store logo.png" alt="CoolGadgets Logo" width="80">
+                </a>
+                <div class="collapse navbar-collapse">
+                    <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+                        <li class="nav-item"><a class="nav-link" href="/">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="products.html">Products</a></li>
+                        <li class="nav-item"><a class="nav-link" href="/#contact">Help</a></li>
+                        <li class="nav-item"><a class="nav-link" href="aboutus.html">About us</a></li>
+                        <li class="nav-item"><a class="nav-link" href="cart.html"><i class="fas fa-shopping-cart"></i></a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <!--- Products Section -->
+    
+    <form action="/search" method="get" class="search-form"> 
+        <input type="text" placeholder="Search..." name="q"> 
+        <button type="submit" class="search-button"><i class="fa fa-search"></i></button> 
+        </form> <style> .search-form { display: flex; justify-content: center; margin-top: 50px; } .search-button 
+        { background: url('https://example.com/magnifying-glass-icon.png') no-repeat center;
+     background-size: contain; border: none; width: 30px; height: 30px; cursor: pointer; } </style>
+     <div class="container my-5">
+        <h2 class="text-center mb-4">Our Products</h2>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-4 g-4">
+            
+            <!-- Product 1 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/bothSidePaper2.jpg" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Both Side ruled paper</h5>
+                        <p class="card-text">₹50.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 2 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/single paper.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Single Side ruled paper</h5>
+                        <p class="card-text">₹50.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 3 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/Book 100.png" class="card-img-top" alt="Delivery Drone">
+                    <div class="card-body">
+                        <h5 class="card-title">Writing Book (100 page)</h5>
+                        <p class="card-text">₹35.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="$199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+           
+            <!-- Product 4 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/Book 200.png" class="card-img-top" alt="Delivery Drone">
+                    <div class="card-body">
+                        <h5 class="card-title">Wrting Book (200 pages) </h5>
+                        <p class="card-text">₹70.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="$199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            
+             <!-- Product 5 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/files P.png" class="card-img-top" alt="Delivery Drone">
+                    <div class="card-body">
+                        <h5 class="card-title">Paper File</h5>
+                        <p class="card-text">₹15.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="$199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 6 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src=" product img/plastic file.png" class="card-img-top" alt="Delivery Drone">
+                    <div class="card-body">
+                        <h5 class="card-title">Plastic File</h5>
+                        <p class="card-text">25.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="$199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 7 -->
+             <div class="col">
+                <div class="card h-100">
+                    <img src="product img/drafter.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Drafter</h5>
+                        <p class="card-text">₹300.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="3D Printing Pen">
+                            <input type="hidden" name="price" value="$45.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 8 -->
+             <div class="col">
+                <div class="card h-100">
+                    <img src="product img/container.png" class="card-img-top" alt="Delivery Drone">
+                    <div class="card-body">
+                        <h5 class="card-title">Container</h5>
+                        <p class="card-text">₹250.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="$199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 9 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/graph.png" class="card-img-top" alt="Delivery Drone">
+                    <div class="card-body">
+                        <h5 class="card-title">Graph Paper</h5>
+                        <p class="card-text">₹25.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="$199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 10 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/compass box.png" class="card-img-top" alt="Delivery Drone">
+                    <div class="card-body">
+                        <h5 class="card-title">Compass Box</h5>
+                        <p class="card-text">₹150.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="$199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 11 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/study table.png" class="card-img-top" alt="Delivery Drone">
+                    <div class="card-body">
+                        <h5 class="card-title">Study Table</h5>
+                        <p class="card-text">₹800.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="$199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 12 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/apron.png" class="card-img-top" alt="Delivery Drone">
+                    <div class="card-body">
+                        <h5 class="card-title">Apron</h5>
+                        <p class="card-text">₹250.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="$199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 13 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/JAVA.png" class="card-img-top" alt="Delivery Drone">
+                    <div class="card-body">
+                        <h5 class="card-title">Java Book</h5>
+                        <p class="card-text">₹450.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="$199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 14 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/APJ.png" class="card-img-top" alt="Delivery Drone">
+                    <div class="card-body">
+                        <h5 class="card-title">Advanced Java Book</h5>
+                        <p class="card-text">₹600.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="$199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 15 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/Python.png" class="card-img-top" alt="Delivery Drone">
+                    <div class="card-body">
+                        <h5 class="card-title">Python Book</h5>
+                        <p class="card-text">₹550.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="$199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 16 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/DSA.png" class="card-img-top" alt="Smart Ring">
+                    <div class="card-body">
+                        <h5 class="card-title">DSA Book</h5>
+                        <p class="card-text">₹500.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Smart Ring">
+                            <input type="hidden" name="price" value="199.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Product  17 -->
+            <div class="col">
+                <div class="card h-100">
+                        <img src="product img/EXTC 1.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Microcontrollers Book</h5>
+                        <p class="card-text">₹450.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div><!-- Product 18 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/EXTC 2.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundamentals of EXTC</h5>
+                        <p class="card-text">₹500.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 19 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/EXTC 3.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic of EXTC</h5>
+                        <p class="card-text">₹450.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 20 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/EXTC 4.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">MIcroprocessor Book</h5>
+                        <p class="card-text">₹650.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 21 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/chem1.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundamentals of  chemical Engineering</h5>
+                        <p class="card-text">₹400.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+            <!-- Product 22 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/chem2.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Elements of  chemical Engineering</h5>
+                        <p class="card-text">₹550.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div> 
+             <!-- Product 23 -->
+             <div class="col">
+                <div class="card h-100">
+                    <img src="product img/chem 3.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Introduction to chemical Engineering</h5>
+                        <p class="card-text">₹650.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div> 
+             <!-- Product 24 -->
+             <div class="col">
+                <div class="card h-100">
+                    <img src="product img/chem 4.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">chemical Engineering problems & solutions</h5>
+                        <p class="card-text">₹550.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>
+             <!-- Product 25 -->
+             <div class="col">
+                <div class="card h-100">
+                    <img src="product img/DBMS.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Base Management Sysytem </h5>
+                        <p class="card-text">₹600.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div> 
+             <!-- Product 26 -->
+             <div class="col">
+                <div class="card h-100">
+                    <img src="product img/CC.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Cloud Computing</h5>
+                        <p class="card-text">₹500.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div> 
+             <!-- Product 27 -->
+             <div class="col">
+                <div class="card h-100">
+                    <img src="product img/HCI.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Human Computer Interaction</h5>
+                        <p class="card-text">₹750.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div> 
+             <!-- Product 28 -->
+             <div class="col">
+                <div class="card h-100">
+                    <img src="product img/DSA.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Data Structures and Algorithms</h5>
+                        <p class="card-text">₹500.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <!-- Product 29 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/B Elec.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic Electrical Engineering</h5>
+                        <p class="card-text">₹450.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <!-- Product 30 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/F elec.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundamentals of Electronics</h5>
+                        <p class="card-text">₹500.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <!-- Product 31 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/C elec.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Basic Engineering Circuit</h5>
+                        <p class="card-text">₹650.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <!-- Product 32 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/ET Elec.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Electrical Transformers</h5>
+                        <p class="card-text">₹750.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div> 
+            <!-- Product 33 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/civ basic.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Civil Engineering Basic</h5>
+                        <p class="card-text">₹500.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <!-- Product 34 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/civ advanced.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Civil Engineering Advanced</h5>
+                        <p class="card-text">₹750.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <!-- Product 35 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/civ material.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Civil Engineering Materials</h5>
+                        <p class="card-text">₹550.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <!-- Product 36 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/civ objective.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Civil Engineering Ojective</h5>
+                        <p class="card-text">₹600.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div> 
+            <!-- Product 37 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/basic mech.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Mechanical Engineering Basic</h5>
+                        <p class="card-text">₹450.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <!-- Product 38 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/funda mec.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Fundamentals of Mechanical Engineering</h5>
+                        <p class="card-text">₹550.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <!-- Product 39 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/design mech.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Mechanical Engineering Design</h5>
+                        <p class="card-text">₹600.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>  
+            <!-- Product 40 -->
+            <div class="col">
+                <div class="card h-100">
+                    <img src="product img/advanced mec.png" class="card-img-top" alt="3D Printing Pen">
+                    <div class="card-body">
+                        <h5 class="card-title">Mechanical Engineering Basic</h5>
+                        <p class="card-text">₹550.00</p>
+                        <form action="cart.html" method="GET">
+                            <input type="hidden" name="product" value="Facial Recognition Home Hub">
+                            <input type="hidden" name="price" value="149.00">
+                            <input type="hidden" name="quantity" value="1">
+                            <input type="submit" class="btn btn-warning" value="Add to Cart">
+                        </form>
+                    </div>
+                </div>
+            </div>  
+
+
+
+            </div>
+        </div>
+    </div>
+
+   <!--- Footer -->
+   <footer class="bg-dark text-light py-4">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-3">
+                    <img src="product img/Store logo.png" alt="CoolGadgets Logo" class="mb-2" width="100">
+                    <p>Discover the best products <br> with Engineering Store !</p>
+                </div>
+                <div class="col-md-3">
+                    <h3>Navigation</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="/" class="text-decoration-none text-light">Home</a></li>
+                        <li><a href="products.html" class="text-decoration-none text-light">Products</a></li>
+                        <li><a href="#contact" class="text-decoration-none text-light">Contact</a></li>
+                    </ul>
+                </div>
+                
+                <div class="col-md-3">
+                    <h3>Follow Us</h3>
+                    <ul class="list-unstyled">
+                        <li><a href="#" class="text-decoration-none text-light">Facebook</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Twitter</a></li>
+                        <li><a href="#" class="text-decoration-none text-light">Instagram</a></li>
+                    </ul>
+                </div>
+            </div>
+            
+        </div>
+    </footer>
+</body>
+</html>
