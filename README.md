@@ -43,23 +43,6 @@ HTML5| Website Structure
 CSS3| Styling & Layout
 VS Code| Development Environment
 
----
-
-📂 Project Structure
-
-ecommerce/
-│
-├── index.html
-├── css/
-│   └── style.css
-│
-├── images/
-│   ├── banner.jpg
-│   ├── product1.jpg
-│   ├── product2.jpg
-│   └── ...
-│
-└── README.md
 
 ---
 
